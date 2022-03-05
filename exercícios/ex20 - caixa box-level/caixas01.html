@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Caixas Box-Level</title>
+   <style>
+      h1 {
+         background-color: lightgrey;
+         height: 300px;
+         width: 500px;
+
+         /*
+         border-width: 6px;
+         border-style: solid;
+         border-color: blue;
+         */
+         
+         border: 6px solid blue; /* Modo simplicado de border*/
+
+         /*
+         padding-top: 10px;
+         padding-right: 12px;
+         padding-left: 16px;
+         padding-bottom: 20px;
+         */
+
+         padding: 10px 12px 16px 20px; /* Modo simplicado de padding - se todas as medidas forem iguais basta informar a medida só uma vez: ex.: 10px, se for dois valores, vai ficar em cima e igual ao 1º valor e da direita e esquerda o segundo */
+
+         /*
+         margin-top: 15px;
+         margin-right: 20px;
+         margin-left: 18px;
+         margin-bottom: 25px;
+         */
+
+         margin: 15px 20px 18px 25px; /* Modo simplicado de margin, para centralizar e manter a margin da esq. e direita. poderia ser: 15px auto 18px auto*/
+
+         /*
+         outline-width: 5px;
+         outline-style: dashed;
+         outline-color: rgb(2, 5, 1);
+         */
+
+         outline: 5px dashed rgb(2, 5, 1); /* Modo simplicado de outline*/
+         
+         /* margin: auto; (margen no meio) */
+         }
+
+         
+   </style>
+</head>
+<body>
+   <h1>Exemplo de box-level</h1>
+   <p>Parágrafo também são box-level, mas <a href="#">links são inline-level</a></p>
+</body>
+</html>

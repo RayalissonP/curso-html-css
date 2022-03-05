@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grouping Tags</title>
+   <style>
+      body {
+         font-family:Arial, Helvetica, sans-serif; 
+         background-color: antiquewhite;
+         margin: 0px;
+      }
+
+      header {
+         background-color: white;
+         padding: 10px;
+         margin: 10px;
+      }
+
+      nav {
+         background-color: rgb(131, 130, 130);
+         padding: 3px;
+         box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.400);
+         border-radius: 3px; /* arredondamento da borda*/
+         }
+      
+      nav > a {
+         text-decoration: none;
+         color: white;
+         font-weight: bold;
+         margin: 20px;
+      }
+
+      nav > a:hover {
+         background-color: rgb(58, 58, 228);
+         text-decoration: underline;
+      }
+
+      main {
+         background-color: white;
+         padding: 10px;
+         margin: 10px;
+         box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.400);
+         border-radius: 3px; /* arredondamento da borda*/
+         }
+
+      article {
+         background-color: lightgray;
+         padding: 5px;
+      }
+
+      article > aside {
+         background-color: rgb(173, 172, 172);
+      }
+
+      footer {
+         background-color: black;
+         color: white;
+         text-align: center;
+         padding: 4px;
+         margin: 0px;
+      }
+      
+      footer {
+         margin: 0px;
+      }
+
+   </style>
+
+</head>
+<body>
+   <!-- 
+      header = Cabeçalho
+      main   = Conteúdo principal
+      footer = Rodapé  
+   -->
+   <header>
+      <h1>Site</h1>
+      <nav>
+         <a href="#">Link</a>
+         <a href="#">Link</a>
+         <a href="#">Link</a>
+         <a href="#">Link</a>
+         <a href="#">Link</a>
+         </nav>
+   </header>
+   <main>
+      <section id="assuntos">
+         <p>Esportes Política Tecnologia</p>
+      </section>
+      <section id="noticias">
+         <article>
+            <h2>Nóticias sobre o Brasil</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt delectus obcaecati quod dolorum, temporibus eum quas iure vel sequi, officiis illo eius eveniet aliquam dicta assumenda dolorem mollitia, maiores doloremque.</p>
+            <aside>
+               <p>Artigo escrito por fulano</p>
+            </aside>
+         </article>
+         <article>
+            
+         </article>
+     </section>
+   </main>
+   <footer>
+      Desenvolvido por Rayalisson
+   </footer>  
+</body>
+</html>
