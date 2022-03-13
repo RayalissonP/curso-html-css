@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tabelas</title>
+</head>
+<style>
+   body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   
+   table {
+      width: 400px;
+      border-collapse: collapse
+   }
+
+   thead, tfoot {
+      background-color: lightgray;
+   }
+
+   th, td {
+      padding: 8px;
+      border: 1px solid black;
+   }
+
+   caption {
+      font-size: 1.2em;
+      background-color: rgb(147, 175, 175);
+      font-weight: bold;
+      padding: 5px;
+   }
+
+</style>
+<body>
+   <h2>Tabelas Grandes</h2>
+</body>
+   <!--
+      ANATOMIA PARA TABELAS GRANDES
+      TABLE
+         THEAD
+            TR, TD, TH
+         TBODY
+            TR, TD, TH
+         TFOOT
+            TR, TD, TH
+   -->
+
+   <table>
+      <caption>População das Unidades Federativas</caption>
+      <thead>
+         <tr>
+            <th scope="col">Estado</th> <!-- escopo Coluna-->
+            <th scope="col" style="width: 80px;">População</th>
+         </tr>
+      </thead>
+
+      <tbody>
+         <tr>
+            <td>São Paulo</td>
+            <td>45.919</td>
+         </tr>
+         <tr>
+            <td>Minas Gerais</td>
+            <td>21.168</td>
+         </tr>
+         <tr>
+            <td>Rio de Janeiro</td>
+            <td>17.264</td>
+         </tr>         
+      </tbody>
+      <tfoot>
+         <tr>
+            <th scope="row">Total de Habitantes</th> <!-- escopo Linha-->
+            <td><strong>xxxx</strong></td>
+         </tr>
+      </tfoot>
+   </table>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tabelas</title>
+   <style>
+      body {
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+   
+      table {
+         width: 400px;
+         height: 150px;
+         border-collapse: collapse;
+      }
+
+      tr.linha {
+         background-color: rgb(199, 245, 245);
+      }
+
+      td {
+         border: 1px solid black;
+         padding: 5px;
+         text-align: center;
+         vertical-align: middle; /* Alinhamento vertical*/
+      }
+
+   </style>
+</head>
+<body>
+   <h1>Tabelas</h1>
+      <!--
+      Hierarquia de Tabelas simples
+      TABLE = Tabela
+         TABLE ROW = Linha de tabela
+            TABLE HEADER = Cabeçalho de tabela
+            TABLE DATA - Dado de Tabela
+   -->
+   <table>
+      <tr class="linha"> <!-- 1ª Linha-->
+         <td>A1</td>
+         <td>B1</td>
+         <td>C1</td>
+      </tr>
+
+      <tr> <!-- 2ª Linha-->
+         <td>A2</td>
+         <td>B2</td>
+         <td>C2</td>
+      </tr>
+
+      <tr class="linha"> <!-- 3ª Linha-->
+         <td>A3</td>
+         <td>B3</td>
+         <td>C3</td>
+      </tr>
+
+      <tr>
+         <td>A4</td>
+         <td>B4</td>
+         <td>C4</td>
+      </tr>
+   </table>
+</body>
+</html>
