@@ -13,10 +13,18 @@
    
    table {
       width: 400px;
-      border-collapse: collapse
+      border-collapse: collapse;
+      position: relative; /* Quesito para cabeçalho fixo em tabelas*/ 
    }
 
    thead, tfoot {
+      background-color: lightgray;
+   }
+
+   /* Config para deixa cabeçalho fixo*/
+   thead > tr > th {
+      position: sticky;
+      top: -1px;
       background-color: lightgray;
    }
 
