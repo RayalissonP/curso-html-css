@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=
+   , initial-scale=1.0">
+   <title>Colgroup</title>
+   <style>
+      table {
+         font-family: arial;
+         border-collapse: collapse;
+         width: 400px;
+         height: 100px;
+         
+      }
+
+      th, td {
+         border: 1px solid black;
+         text-align: center;
+      }
+
+      caption {
+         font-weight: bold;
+         padding: 8px;
+         font-size: 1.3rem;
+      }
+
+      col.cnome, col.cidade {
+         background-color: aquamarine;
+      }
+
+      col.cprof {
+         background-color: yellow;
+      }
+
+   </style>
+</head>
+<body>
+   <h1>Exercício de Tabelas - Colgroup</h1>
+   <table>
+
+      <colgroup>
+         <col class="cnome">
+         <col class="csexo">
+         <col class="cidade">
+         <col class="cprof">
+      </colgroup>
+
+      <caption>Cadastros</caption>
+
+      <thead>
+         <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+         </tr>
+      </thead>
+
+      <tbody>
+         <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+         </tr>
+
+         <tr>
+            <td>Kléber</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Programador</td>
+         </tr>
+
+      </tbody>
+   </table>
+</body>
+</html>
