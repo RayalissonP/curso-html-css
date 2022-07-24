@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Iframe "Dinâmico"</title>
+</head>
+<style>
+   body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   iframe#tela {
+      width: 95%;
+      height: 400px;
+      border: 2px solid black;
+   }
+
+</style>
+<body>
+   <h1>Faça um Escolha</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ab veniam. Quisquam quia eum facere ipsa, sed, laudantium amet tempora excepturi error ducimus earum necessitatibus facilis, vitae illo maxime autem.</p>
+
+   <!-- Para colocar a página dentro da caixa do iframe é necessário nomear com "name" dentro do iframe e no link, em "target" colocar o mesmo nome atribuido-->
+
+   <ul>
+      <li><a href="/exercicios/desafios/d05/index.html" target="frame">Primeira página</li>
+      <li><a href="/exercicios/desafios/d010/index.html" target="frame">Segunda página</a></li>
+      <li><a href="/exercicios/desafios/d012/index.html" target="frame">Terceira página</a></li>
+   </ul>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quidem tempora ipsam excepturi accusantium laborum magnam voluptates laudantium! Maxime quaerat ipsum fugit sunt aliquid modi recusandae quis quibusdam! Debitis quasi ipsum dolores blanditiis minima quidem, quaerat accusantium ratione explicabo magni quo. Maiores voluptatibus enim, ducimus at nesciunt labore impedit odit eos beatae autem, sint dolorem consequatur temporibus repudiandae magnam dolore possimus sit non corrupti quidem amet quia. Molestias, quibusdam at, distinctio dicta dolor voluptatibus, esse temporibus similique nostrum architecto explicabo ut voluptate? Vero dolores inventore numquam ut accusamus maiores repellendus voluptates, illum magni hic distinctio iusto nostrum consequatur! Quas, magni ut? Doloremque aperiam maiores explicabo totam, velit ab architecto corrupti veniam animi autem eligendi ducimus numquam, quas minima cupiditate voluptatibus quae reprehenderit nostrum dignissimos officiis, molestiae ea sint quam cum. Consectetur ducimus dolorem fuga non! Officiis blanditiis, sit dolores neque qui voluptate, dolore quia et sunt est incidunt laborum. Sint!</p>
+
+   <iframe id="tela" name= "frame" srcdoc="<h1> Escolha umas das opções acima <h1/>" frameborder="1">Navegador imcompatível</iframe> 
+   <!-- srcdoc-->
+
+</body>
+</html>
