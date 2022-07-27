@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Customizando uma Scrollbar</title>
+   <style>
+      html, body {
+         background: #212121;
+         display: flex;
+         width: 100%;
+         height: 100%;
+         justify-content: center;
+         align-items: center;
+      }
+
+      div {
+         width: 200px;
+         height: 100px;
+         overflow-y: scroll;
+         color: white;
+      }
+
+      div::-webkit-scrollbar {
+         width: 16px; /* Define o tamanho da barra*/
+         border-radius: 8px;
+         background: #161616;
+      } 
+
+      div::-webkit-scrollbar-thumb {
+         background: #ff0066;
+         border-radius: 6px;  
+      }
+
+      div::-webkit-scrollbar-track { /* Cor do fundo e borda*/
+         background-color: black;
+         border-radius: 8px;
+      }
+
+   </style>
+</head>
+<body>
+   <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore similique itaque ratione quae ipsum fuga maxime autem nesciunt nobis? Praesentium exercitationem odio totam doloremque hic quos non enim animi ipsa. Illum quibusdam voluptatibus corporis suscipit neque odit, fugiat iste, blanditiis maiores ipsa mollitia laboriosam ea aut ad perspiciatis iusto. Neque quia hic quisquam? Sint dolores asperiores numquam qui modi veniam ratione odit dicta suscipit quia, reiciendis esse fugit quas sed blanditiis iure facilis accusamus sequi repellat sapiente odio vero velit neque. Sed, nulla ex suscipit molestias obcaecati voluptates eum officia eveniet asperiores veritatis perspiciatis earum laboriosam itaque possimus necessitatibus debitis.
+</body>
+</html>

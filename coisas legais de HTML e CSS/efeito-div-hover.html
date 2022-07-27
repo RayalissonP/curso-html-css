@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Efeito Div Hover</title>
+   <style>
+      div {
+         background-color: #fff;
+         border-radius: 6px;
+         color: #020e26;
+         padding: 15px;
+         width: 250px;
+         overflow: hidden;
+         transition: 0.4s;
+         transform: translate(0);
+         font-weight: 400;
+         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+         }
+      div p {
+         margin: 0;
+         font-size: 14px;
+         text-align: justify;
+      }
+
+      div:hover {
+         color:#fff;
+      }
+
+      div::before {
+         content: "";
+         position: absolute;
+         top: -75px;
+         left: -45px;
+         z-index: -1;
+         background: rgb(22, 24, 23);
+         background: linear-gradient(123deg, rgba(22,24,23,0.6979166666666667) 2%, rgba(246,124,2,0.9500175070028011) 61%);
+         border-radius: 50%;
+         width: 200px;
+         height: 200px;
+         transition: 0.4s;
+      }
+
+      div:hover::before{
+         transform: scale(4.5);
+      }
+   </style>
+</head>
+<body>
+   <div>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus autem impedit quaerat molestiae exercitationem minima nisi eligendi vitae praesentium eos, aliquid asperiores aspernatur, reiciendis consequuntur aut ut modi ipsam dicta recusandae cumque unde nesciunt at ducimus quasi? Totam necessitatibus rerum quo est atque. Deserunt sed non, distinctio quam reprehenderit cum.</p>
+   </div>
+</body>
+</html>
