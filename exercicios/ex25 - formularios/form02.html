@@ -6,7 +6,36 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Teste de Formulário</title>
 </head>
+<style>
+   div input {
+      padding: 3px;
+      margin: 8px;
+   }
+</style>
 <body>
-   
+   <form action="cadastro.php" method="post" autocomplete="on">
+   <div>
+      <label for="user">Usuário: </label>
+      <input type="text" name="user" id="user" required minlength="5" maxlength="15" size="18" placeholder="Mínimo 4 caracteres" autocomplete="username">
+   </div>
+   <div>
+      <label for="password">Senha: </label >
+      <input type="password" name="password" id="password" required minlength="6" maxlength="16" size="18" placeholder="Mínimo 6 caracteres" autocomplete="current-password">
+   </div>
+   <div>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+   </div>
+
+   <!--
+      - required: torna o campo de preenchimento obrigatório
+      - reset: limpa os campos
+      - minLength: mínimo de caracteres
+      - maxLenght: máximo de caracteres
+      - size: tamanho da caixa para mostragem
+      - placeholder: dica dentro da form
+      - autocomple="on": tanto no form quanto no input para classificar melhor e fazer com os navegadores sugirem melhor os campos
+   -->
+</form>
 </body>
 </html>
