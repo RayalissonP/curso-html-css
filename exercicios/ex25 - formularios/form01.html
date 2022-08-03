@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formulários</title>
+</head>
+<body>
+   <h1>Insira seus dados: </h1>
+   <form action="cadastro.php" autocomplete="on">
+      <p><label for="nome">Nome: </label>
+         <input type="text" name="nome" id="nome"></p>
+      <p><label for="sobrenome">Sobrenome: </label>
+         <input type="text" name="sobrenome" id="sobrenome"> 
+      <p><input type="submit" value="Enviar"></p>
+   </form>
+
+   <!--
+      - Caso não seja utilizado nenhum método o padrão é o "GET" para caso em que os dados não sejam sensíveis; é possivel no máximo 3000bytes ou 3000letras, não permite enviar arquivos.
+      - "POST" é possível enviar mais de 3000bytes, permite enviar arquivos e não deixa amostra os dados na URL.
+      - HTTPS para proteger dados sensíveis
+      - action = ação do botão submit
+      - label = cria uma relação entre a etiqueta e o formulário, e é útil nos mobiles
+      **obrigatório usar nos formulários**
+   -->
+</body>
+</html>
