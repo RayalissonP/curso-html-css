@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Checkbox e Radio</title>
+   <style>
+      div input {
+         margin: 6px;
+      }
+
+   </style>
+</head>
+<body>
+   <form action="cadastro.php" method="get" autocomplete="on">
+      <fieldset>
+         <legend>Jogos Favoritos</legend>
+         <input type="checkbox" name="gow" id="gow"> <label for="gow">God Of War</label><br>
+         <input type="checkbox" name="nfs" id="nfs"> <label for="nfs">Need For Speed</label><br>
+         <input type="checkbox" name="mk" id="mk"> <label for="mk">Mortal Kombat</label><br>
+         <input type="checkbox" name="fifa" id="fifa"> <label for="fifa">FIFA<br></label>
+      </fieldset>
+      <div>
+         <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="mas"><label for="mas" value="M"> Masculino</label>
+            <input type="radio" name="sexo" id="fem"> <label for="fem" value="F">Feminino</label>
+         </fieldset>
+      </div>
+      <div>
+         <input type="checkbox" name="ad" id="ad" checked><label for="ad">Deseja receber propagandas sobre os jogos?</label>
+      </div>
+      <div>
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Limpar">
+      </div>
+   </form>
+   <!--
+      - Todo botão de radio no mesmo grupo tem que ter o mesmo "name"
+   -->
+</body>
+</html>
