@@ -1,3 +1,4 @@
 {
-   "livePreview.defaultPreviewPath": "/coisas legais de HTML e CSS/customizar-scrollbar.html"
+   "livePreview.defaultPreviewPath": "/coisas legais de HTML e CSS/customizar-scrollbar.html",
+   "liveServer.settings.port": 5501
 }
